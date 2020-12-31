@@ -1,0 +1,41 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'view',
+1 verbose cli   '--json',
+1 verbose cli   'dotenv',
+1 verbose cli   'description',
+1 verbose cli   'dist-tags.latest',
+1 verbose cli   'homepage',
+1 verbose cli   'version' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly mapToRegistry name dotenv
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry uri https://registry.npmjs.org/dotenv
+8 verbose request uri https://registry.npmjs.org/dotenv
+9 verbose request always-auth set; sending authorization
+10 info attempt registry request try #1 at 7:32:51 PM
+11 info retry will retry, error on last attempt: Error: This request requires auth credentials. Run `npm login` and repeat the request.
+12 info attempt registry request try #2 at 7:33:01 PM
+13 info retry will retry, error on last attempt: Error: This request requires auth credentials. Run `npm login` and repeat the request.
+14 info attempt registry request try #3 at 7:34:01 PM
+15 verbose stack Error: This request requires auth credentials. Run `npm login` and repeat the request.
+15 verbose stack     at CachingRegistryClient.authify (/usr/share/npm/node_modules/npm-registry-client/lib/authify.js:17:14)
+15 verbose stack     at CachingRegistryClient.makeRequest (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:103:17)
+15 verbose stack     at /usr/share/npm/node_modules/npm-registry-client/lib/request.js:66:17
+15 verbose stack     at RetryOperation._fn (/usr/share/npm/node_modules/npm-registry-client/lib/attempt.js:18:5)
+15 verbose stack     at Timeout._onTimeout (/usr/share/npm/node_modules/retry/lib/retry_operation.js:49:10)
+15 verbose stack     at ontimeout (timers.js:482:11)
+15 verbose stack     at tryOnTimeout (timers.js:317:5)
+15 verbose stack     at Timer.listOnTimeout (timers.js:277:5)
+16 verbose cwd /home/deepak/My Project/CurrencyConverter/currency-converter-express
+17 error Linux 5.4.0-58-generic
+18 error argv "/usr/bin/node" "/usr/bin/npm" "view" "--json" "dotenv" "description" "dist-tags.latest" "homepage" "version"
+19 error node v8.10.0
+20 error npm  v3.5.2
+21 error This request requires auth credentials. Run `npm login` and repeat the request.
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]
